@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { Processo } from '../processo.model';
 import { ProcessosService } from '../processos.service';
+import { CadastroPageComponent } from "../cadastro-page/cadastro-page.component"
 
 @Component({
   selector: 'tela-lista',
@@ -15,7 +16,6 @@ export class TelaListaComponent implements OnInit {
   descricaoFiltro: string = ""
   codigoFiltro: string = ""
   constructor(private service: ProcessosService, private router: Router) { }
-
   ngOnInit(): void {
     this.service
     .listarProcessos()

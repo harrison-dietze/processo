@@ -12,19 +12,20 @@ import { processosInicial } from '../processo.mock';
   styleUrls: ['./cadastro-page.component.css']
 })
 export class CadastroPageComponent implements OnInit {
+  processos: Processo[] = [];
   public form!: FormGroup;
-  public listanova: Processo[] = processosInicial
   constructor(private fb: FormBuilder, private service: ProcessosService,  private router: Router) { }
   ngOnInit(): void {
+    this.processos = processosInicial;
     this.form = this.fb.group({
       codigo: ['', [Validators.required]],
       descricao: [
         '',
         [Validators.required]
       ],
-      isAtivo: [true, [Validators.required]],
+      isAtivo: [, [Validators.required]],
     });
     }
-    onSubmit(form: FormGroup, listanova: Processo[]) {
-      this.service.adicionarProcesso(this.form.value, listanova)
+    onSubmit(form: FormGroup) {
+      this.service.adicionarProcesso(form.value, this.processos)
       ;}}

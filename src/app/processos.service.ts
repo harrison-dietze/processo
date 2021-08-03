@@ -9,7 +9,6 @@ import { processosInicial } from './processo.mock';
   providedIn: 'root'
 })
 export class ProcessosService {
-
   public listarProcessos(): Observable<Processo[]> {
     return new Observable(subscriber => {
       setTimeout(() => {
@@ -21,6 +20,7 @@ export class ProcessosService {
   public adicionarProcesso(processo: Processo, listanova: Processo[])
   {
     listanova.push(processo)
+    return listanova
   }
 
   constructor() { }

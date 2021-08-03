@@ -11,3 +11,4 @@ Descrição: <input type="text" [(ngModel)]="descricaoFiltro">
 Código: <input type="text" [(ngModel)]="codigoFiltro"></div>
 <br>
 <processo-card *ngFor="let processo of listaFiltro3" [processo]="processo"></processo-card>
+{{ listaFiltro3.length ? listaFiltro3.length : "Ops, parece que sua pesquisa não tem resultados correspondetes." }}

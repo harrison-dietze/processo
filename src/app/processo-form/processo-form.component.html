@@ -6,16 +6,17 @@
         <input
           type="text"
           name="descricao"
-          formControlName="descricao"
+          formControlName="descricao" placeholder="*"
         />
-        </div>
+      </div>
+        <!--<span ngIf="form.get('descricao').pristine == false">Campo obrigatório</span>-->
 
       <div class="input">
-        <label for="codigo">Código</label>
+        <label for="codigo">Código:</label>
         <input
           type="text"
           name="codigo"
-          formControlName="codigo"
+          formControlName="codigo" placeholder="*"
         />
   
       <div class="input">

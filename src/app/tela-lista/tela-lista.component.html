@@ -10,5 +10,13 @@ Descrição: <input type="text" [(ngModel)]="descricaoFiltro">
 <br>
 Código: <input type="text" [(ngModel)]="codigoFiltro"></div>
 <br>
-<processo-card *ngFor="let processo of listaFiltro3" [processo]="processo"></processo-card>
-{{ listaFiltro3.length ? listaFiltro3.length : "Ops, parece que sua pesquisa não tem resultados correspondetes." }}
+<div class="colunas">
+  <p style="width: 25%;">Status</p>
+  <p style="width: 25%;">Código</p>
+  <p style="width: 25%;">Descrição</p>
+  <p style="width: 25%;"></p>
+</div>
+<div class="grid">
+<processo-card *ngFor="let processo of listaFiltro3" [processo]="processo" (editar)="editar($event)"></processo-card>
+{{ listaFiltro3.length ? listaFiltro3.length : "Ops, parece que sua pesquisa não tem resultados correspondentes." }}
+</div>

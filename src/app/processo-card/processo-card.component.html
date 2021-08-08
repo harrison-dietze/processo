@@ -1,7 +1,14 @@
- <div class="card">
-    <p *ngIf="processo.isAtivo == true"> Ativo </p>
-    <p *ngIf="processo.isAtivo == false"> Inativo </p>
-    <p> {{processo.descricao}} </p>
-    <p> {{processo.codigo}} </p>
+<div class="tudo"><button
+class="card"
+type="button"
+name="button"
+(click)="onClickEditar()"
+>
+   <div class="texto">
+    <p *ngIf="processo.isAtivo == true" class="item"> Ativo </p>
+    <p *ngIf="processo.isAtivo == false" class="item"> Inativo </p>
+    <p class="item"> {{processo.codigo}} </p>
+    <p class="item"> {{processo.descricao}} </p>
 </div>
+</button></div>
 <br>

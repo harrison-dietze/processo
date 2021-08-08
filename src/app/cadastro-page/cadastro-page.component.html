@@ -1,2 +1,2 @@
 <a routerLink="/lista">Voltar</a> <br />
-<processo-form [form]="form" onSubmit={$event}></processo-form>
+<processo-form [form]="form" (submit)="cadastrar($event)"></processo-form>

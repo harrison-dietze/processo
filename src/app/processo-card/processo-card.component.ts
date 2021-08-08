@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { Processo } from '../processo.model';
 
 @Component({
@@ -12,6 +12,10 @@ export class ProcessoCardComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+  @Output() editar = new EventEmitter<string>();
+  public onClickEditar() {
+    this.editar.emit(this.processo.codigo);
   }
 
 }

@@ -17,11 +17,20 @@ export class ProcessosService {
       },);
     });
   }
+  public buscarProcesso(index: string): Observable<Processo> {
+    return new Observable(subscriber => {
+      setTimeout(() => {
+        subscriber.next(processosInicial.find(processo => processo.codigo == index));
+        subscriber.complete();
+      },);
+    });
+  }
   public adicionarProcesso(processo: Processo, listanova: Processo[])
   {
     listanova.push(processo)
     return listanova
   }
+  
 
   constructor() { }
 }

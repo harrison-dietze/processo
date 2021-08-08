@@ -1,4 +1,21 @@
 .card{
+    justify-self: flex-end;
+    border-radius: 10px;
     border-width:  medium;
     border-style: solid;
+    width: 75%;
+}
+.texto{
+    display: flex;
+    justify-self: end;
+    flex-direction:row;
+    margin: 0.5%;
+    width: 75%;
+}
+.item{
+    width: 25%;
+}
+.tudo{
+    width: 100%;
+    justify-content: end;
 }

@@ -64,5 +64,9 @@ export class TelaListaComponent implements OnInit {
   })
   }
 
+  public editar(codigo: string) {
+    this.router.navigateByUrl('/edicao/' + codigo);
+  }
+  
 
 }

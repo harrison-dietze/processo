@@ -1,0 +1,8 @@
+.colunas{
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+}
+.grid{
+    max-height: 75%;
+}

@@ -1,7 +1,6 @@
 import { Component, EventEmitter, OnInit } from '@angular/core';
 import { Output, Input } from '@angular/core';
-import { FormGroup } from '@angular/forms';
-import { processosInicial } from '../processo.mock';
+import { FormGroup, ReactiveFormsModule} from '@angular/forms';
 import { Processo } from '../processo.model';
 
 @Component({
@@ -19,11 +18,8 @@ export class ProcessoFormComponent implements OnInit {
       alert('Formulário inválido, preencha corretamente.');
       return;
     }
-
+    
     this.submit.emit(this.form.value);
-    processosInicial.push(this.form.value)
-    this.form.reset();
-    alert('Processo cadastrado com sucesso.');
   }
 
   constructor() { }

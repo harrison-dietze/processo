@@ -8,6 +8,7 @@ import { ProcessoCardComponent } from './processo-card/processo-card.component';
 import { CadastroPageComponent } from './cadastro-page/cadastro-page.component';
 import { ProcessoFormComponent } from './processo-form/processo-form.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { EdicaoPageComponent } from './edicao-page/edicao-page.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     TelaListaComponent,
     ProcessoCardComponent,
     CadastroPageComponent,
-    ProcessoFormComponent
+    ProcessoFormComponent,
+    EdicaoPageComponent
   ],
   imports: [
     ReactiveFormsModule,

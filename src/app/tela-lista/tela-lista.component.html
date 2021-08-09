@@ -13,18 +13,20 @@
 <div class="resto">
   <div class="filtro">
     <div>
-    <label for="status">Status:</label>
-      <select name="status" [(ngModel)]="statusFiltro">
+    <label for="status">Status: </label>
+      <select class="fill" name="status" [(ngModel)]="statusFiltro">
         <option [ngValue]="null"></option>
         <option [ngValue]="true">Ativo</option>
         <option [ngValue]="false">Inativo</option>
       </select>
     </div>
   <div>
-      <label for="desc">Descrição: </label> <input name="desc" type="text" [(ngModel)]="descricaoFiltro">
+      <label for="desc">Descrição: </label> 
+      <input class="fill" name="desc" type="text" [(ngModel)]="descricaoFiltro">
   </div>
   <div>
-      <label for="desc">Código: </label> <input name="cod" type="text" [(ngModel)]="codigoFiltro">
+      <label for="desc">Código: </label> 
+      <input class="fill" name="cod" type="text" [(ngModel)]="codigoFiltro">
     </div>
     </div>
 <div class="colunas">

@@ -1,4 +1,5 @@
 .card{
+    height: 10%;
     font-size: large;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     font-family: "roboto", sans-serif;
@@ -23,7 +24,6 @@
     width: 25%;
 }
 .tudo{
-    height: 5%;
     width: 100%;
     justify-content: end;
 }

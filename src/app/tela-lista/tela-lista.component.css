@@ -9,10 +9,20 @@
 .grid{
     max-height: 75%;
 }
+.bu{
+    box-shadow: 0px 8px 5px rgba(0, 0, 0, 0.397);
+    color: white;
+    border-radius: 5px;
+    justify-items: flex-end;
+    text-align: center;
+    width: 10%;
+    cursor: pointer;
+    background-color: rgb(255, 47, 47);
+}
 .novo{
+    width: 10%;
     display: flex;
-    align-content: flex-end;
-    justify-content: end;
+    justify-self: flex-end;
 }
 .cabeca{
     width: 100%;
@@ -28,7 +38,13 @@
 .tela{
     display: grid;
     grid-template-columns: 1fr 20fr;
+    grid-template-rows: 1fr;
 }
 .resto{
     margin: 5%;
+}
+.filtro{
+    display: flex;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: space-around;
 }

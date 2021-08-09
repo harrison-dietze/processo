@@ -63,6 +63,9 @@ export class TelaListaComponent implements OnInit {
       }
   })
   }
+  public cadastrar(){
+    this.router.navigateByUrl('/cadastro')
+  }
 
   public editar(codigo: string) {
     this.router.navigateByUrl('/edicao/' + codigo);

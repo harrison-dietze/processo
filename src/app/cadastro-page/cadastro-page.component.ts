@@ -31,6 +31,15 @@ export class CadastroPageComponent implements OnInit {
     }
 
     cadastrar(processo: Processo) {
+      if (this.form.value.descricao.length > 40){
+        alert("O limite de caracteres para o descrição é de 40 caracteres.")
+        this.form.controls['descricao'].reset()
+      }
+      else if (this.form.value.codigo.length > 4){
+        alert("O limite de caracteres para o código é de 4 caracteres.")
+        this.form.controls['codigo'].reset()
+      }
+      else{
       this.verificado = this.form.value
         for (processosInicial[this.x]; this.x<processosInicial.length; this.x++) {
             if (processosInicial[this.x].codigo == this.verificado.codigo || processosInicial[this.x].descricao == this.verificado.descricao){
@@ -46,6 +55,7 @@ export class CadastroPageComponent implements OnInit {
               processosInicial.push(this.form.value)
               this.form.reset();
           }
+        }
         }
       }
         

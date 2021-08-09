@@ -1,10 +1,9 @@
 .card{
-    height: 10%;
     font-size: large;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
     font-family: "roboto", sans-serif;
     justify-self: flex-end;
-    border-radius: 10px;
+    border-radius: 1px;
     border-width:  medium;
     border-style: solid;
     justify-items: flex-start;
@@ -12,12 +11,13 @@
     width: 100%;
     cursor: pointer;
     background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.239);
 }
 .texto{
     display: flex;
     justify-self: end;
     flex-direction:row;
-    margin: 0.5%;
+    margin: 0%;
     width: 75%;
 }
 .item{

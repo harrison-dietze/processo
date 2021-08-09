@@ -1,5 +1,6 @@
 input.ng-invalid.ng-dirty::placeholder {
-   background-color: rgba(250, 10, 10, 0.246)
+    background-color: rgba(255, 0, 0, 0.274);
+    color: rgb(250, 10, 10)
 }
 .valido{
     color: rgb(0, 195, 0);

@@ -27,17 +27,21 @@ export class EdicaoPageComponent implements OnInit {
     
     this.service.buscarProcesso(codigo).subscribe((processo: Processo) => {
       this.form = this.fb.group({
-        descricao: [processo.descricao, [Validators.required]],
-        codigo: [processo.codigo, [Validators.required]],
-        isAtivo: [processo.isAtivo, [Validators.required]]
-  })
-});
+        codigo: [, [Validators.required]],
+        descricao: [
+          ,
+          [Validators.required]
+        ],
+        isAtivo: [, [Validators.required]],
+      });
+    });
+    this.esseDescricao = this.form.value.descricao
 }
 
   editar(processo: Processo) {
     this.verificado = this.form.value
     for (processosInicial[this.x]; this.x<processosInicial.length; this.x++) {
-      if (this.esseCodigo == this.verificado.codigo  || this.esseDescricao == this.verificado.descricao) {
+      if (this.esseCodigo == this.verificado.codigo  && this.esseDescricao == this.verificado.descricao) {
         alert('Processo cadastrado com sucesso.')
         processosInicial[this.edi] = this.verificado
         this.form.reset();

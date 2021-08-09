@@ -1,9 +1,16 @@
 .card{
+    font-size: large;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    font-family: "roboto", sans-serif;
     justify-self: flex-end;
     border-radius: 10px;
     border-width:  medium;
     border-style: solid;
-    width: 75%;
+    justify-items: flex-start;
+    text-align: left;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
 }
 .texto{
     display: flex;
@@ -16,6 +23,7 @@
     width: 25%;
 }
 .tudo{
+    height: 5%;
     width: 100%;
     justify-content: end;
 }

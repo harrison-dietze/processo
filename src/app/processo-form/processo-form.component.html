@@ -2,7 +2,7 @@
     <form class="form" [formGroup]="form">
       <h2>Formulário</h2>
       <div class="input">
-        <label for="descricao">Descrição</label>
+        <label for="descricao">Descrição: </label>
         <input
           type="text"
           name="descricao"
@@ -12,7 +12,7 @@
         <!--<span ngIf="form.get('descricao').pristine == false">Campo obrigatório</span>-->
 
       <div class="input">
-        <label for="codigo">Código:</label>
+        <label for="codigo">Código: </label>
         <input
           type="text"
           name="codigo"
@@ -20,14 +20,14 @@
         />
   
       <div class="input">
-        <label for="isAtivo">Status</label>
+        <label for="isAtivo">Status: </label>
         <select
           name="isAtivo"
           formControlName="isAtivo"
         >
-          <option [ngValue]="true">
+          <option style="border-radius: 20%; background-color: rgba(1, 255, 1, 0.37);" [ngValue]="true">
             Ativo</option
-          ><option [ngValue]="false">
+          ><option style="border-radius: 20%; background-color: rgba(255, 1, 1, 0.37);" [ngValue]="false">
             Inativo</option
           >
         </select>

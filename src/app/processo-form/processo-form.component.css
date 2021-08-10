@@ -12,3 +12,28 @@ select{
     image-resolution: 10px;
     background-image:url(https://upload.wikimedia.org/wikipedia/commons/2/27/Circulo_verde.png);
 }
+.page{
+    background-color: rgba(0, 0, 0, 0.185);
+    border-radius: 10px;
+    margin-left: 25%;
+    margin-right: 20%;
+    display: flex;
+    justify-content: center;
+}
+.form{
+    margin: 20%;
+}
+.bu{
+    margin: 20%;
+    align-self: center;
+    font: 'Open Sans';
+    font-size: large;
+    box-shadow: 0px 1px 1px #a61b1d;
+    color: rgb(255, 255, 255);
+    border-radius: 5px;
+    justify-items: flex-end;
+    text-align: center;
+    width: 40%;
+    cursor: pointer;
+    background-color: rgb(243, 0, 0);
+}
